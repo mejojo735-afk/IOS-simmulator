@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>iOS 26 Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stage">
+    <div class="phone" id="phone">
+      <div class="screen" id="screen" data-wallpaper="aurora">
+        <div class="wallpaper"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+
+        <header class="status-bar" id="statusBar">
+          <span class="sb-time" id="sbTime">9:41</span>
+          <div class="island" id="island"></div>
+          <button class="sb-icons" id="ccHandle" aria-label="Control Center">
+            <span class="signal"><i></i><i></i><i></i><i></i></span>
+            <span class="wifi"></span>
+            <span class="battery"><i></i></span>
+          </button>
+        </header>
+
+        <section class="lock" id="lock">
+          <div class="lock-date" id="lockDate"></div>
+          <div class="lock-time" id="lockTime">9:41</div>
+          <div class="glass notif">
+            <div class="notif-icon chrome-logo"></div>
+            <div><b>Chrome</b><p>แตะปัดขึ้นเพื่อเริ่มท่องเว็บได้เลย</p></div>
+          </div>
+          <div class="lock-actions">
+            <button class="glass round" aria-label="Flashlight">🔦</button>
+            <button class="glass round" aria-label="Camera">📷</button>
+          </div>
+          <div class="lock-hint">ปัดขึ้นเพื่อเปิด</div>
+        </section>
+
+        <section class="home" id="home">
+          <div class="grid" id="grid"></div>
+          <div class="glass search-pill">🔍 ค้นหา</div>
+          <nav class="glass dock" id="dock"></nav>
+        </section>
+
+        <div class="app-layer" id="appLayer"></div>
+
+        <section class="cc" id="cc">
+          <div class="cc-grid">
+            <div class="glass cc-tile cc-net">
+              <button class="cc-btn on" data-toggle>✈︎</button>
+              <button class="cc-btn on" data-toggle>📶</button>
+              <button class="cc-btn on" data-toggle>ᯤ</button>
+              <button class="cc-btn" data-toggle>ᛒ</button>
+            </div>
+            <div class="glass cc-tile cc-media"><b>ไม่มีเพลงที่เล่นอยู่</b><span>⏮ ▶ ⏭</span></div>
+            <button class="glass cc-tile cc-small" data-toggle>🔒</button>
+            <button class="glass cc-tile cc-small" data-toggle>🌙</button>
+            <label class="glass cc-tile cc-slider">☀︎
+              <input type="range" id="brightness" min="20" max="100" value="100">
+            </label>
+            <label class="glass cc-tile cc-slider">🔊
+              <input type="range" min="0" max="100" value="60">
+            </label>
+          </div>
+        </section>
+
+        <div class="dim" id="dim"></div>
+        <div class="home-indicator" id="homeIndicator"><span></span></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
